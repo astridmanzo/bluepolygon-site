@@ -1,0 +1,49 @@
+/* No files to import found in grids/**\/* */
+.main {
+  margin-top: 100px;
+}
+
+.pad, .us-container {
+  margin: 15px 0;
+}
+
+.us-social {
+  list-style-type: none;
+}
+
+.info-us {
+  padding: 0 15px;
+}
+
+pre {
+  tab-size: 8;
+}
+
+.navbar {
+  z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .side-collapse-container {
+    width: 100%;
+    position: relative;
+    left: 0;
+    transition: left 0.4s;
+  }
+  .side-collapse-container.out {
+    left: 200px;
+  }
+
+  .side-collapse {
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    position: fixed;
+    overflow: hidden;
+    transition: width 0.4s;
+  }
+  .side-collapse.in {
+    width: 0;
+  }
+}
