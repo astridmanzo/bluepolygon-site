@@ -1,10 +1,58 @@
-/* No files to import found in grids/**\/* */
-.main {
-  margin-top: 100px;
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+  font-family: "Bree Serif", serif;
 }
 
-.pad, .us-container {
+.main {
+  margin-top: 60px;
+  width: 98%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+p, a {
+  font-size: 18px;
+  color: #333;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* >>>>>>>>>>>>* LAYOUT *<<<<<<<<<<<< */
+.row {
+  margin: 0 !important;
+}
+
+.square, .us-container {
   margin: 15px 0;
+}
+
+.us {
+  text-align: center;
+}
+.us h3 {
+  font-size: 20px;
 }
 
 .us-social {
@@ -15,35 +63,288 @@
   padding: 0 15px;
 }
 
-pre {
-  tab-size: 8;
+.menu-objetos a {
+  font-size: 20px;
+}
+.menu-objetos a a:hover {
+  color: #156fa9;
 }
 
 .navbar {
   z-index: 100;
 }
 
-@media screen and (max-width: 768px) {
-  .side-collapse-container {
-    width: 100%;
-    position: relative;
-    left: 0;
-    transition: left 0.4s;
-  }
-  .side-collapse-container.out {
-    left: 200px;
+.navbar-collapse.collapse {
+  display: none !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+/* >>>>>>>>>>>>* MEDIA QUERIES *<<<<<<<<<<<< */
+@media (min-width: 768px) {
+  .navbar-header {
+    float: none;
   }
 
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+}
+/* -----* 100% width navbar small devices *----- */
+@media (max-width: 512px) {
   .side-collapse {
-    top: 50px;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    position: fixed;
-    overflow: hidden;
-    transition: width 0.4s;
+    width: 100% !important;
   }
   .side-collapse.in {
-    width: 0;
+    width: 0 !important;
   }
+}
+.navbar-header {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.menu-items li a {
+  padding: 25px 40px;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}
+
+.border-me {
+  border-bottom: 1px solid;
+  border-color: #333 !important;
+  max-height: 1000px !important;
+}
+
+.bluepolygon-menu {
+  background-color: #222;
+  border-bottom: solid 7px #0090D5;
+}
+
+.menu-text {
+  float: right;
+  padding: 12px 5px 0 0;
+  color: #fff;
+}
+
+.white-hamburger {
+  border-color: #333 !important;
+}
+
+/* -----* SIDEBAR ALWAYS COLLAPSED *----- */
+.side-collapse-container {
+  width: 100%;
+  position: relative;
+  left: 0;
+  transition: left 0.4s;
+}
+.side-collapse-container.out {
+  left: 220px;
+}
+
+.side-collapse {
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  transition: width 0.4s;
+}
+.side-collapse.in {
+  width: 0;
+}
+
+.menu-items {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-nav {
+  color: #0090D5;
+  width: 100%;
+  text-align: center;
+  margin-top: 130px;
+}
+.social-nav ul {
+  text-align: center;
+  padding: 0;
+  margin-top: 50px;
+}
+.social-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 32%;
+}
+.social-nav ul li a {
+  font-size: 25px;
+  color: #204994;
+}
+.social-nav p {
+  color: #9d9d9d;
+  font-size: 14px;
+}
+
+/* -----* FOOTER *----- */
+footer h4 {
+  color: white;
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.iframe-instagram {
+  text-align: center;
+}
+
+.footer {
+  background-color: #204994;
+  margin-top: 80px;
+}
+
+footer ul li {
+  font-size: 30px;
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  padding: 0 20px;
+}
+
+.contact-footer {
+  margin-top: 30px;
+}
+
+.contact-footer span {
+  font-size: 40px;
+  padding-right: 10px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subfooter {
+  background-color: #333;
+  padding-top: 10px;
+}
+.subfooter a {
+  color: white;
+  font-size: 14px;
+}
+
+.logo-footer h1 {
+  color: white;
+}
+
+/* -----* BLOG @ FRONT PAGE *----- */
+.blog-latest {
+  margin-top: 60px;
+}
+
+/* -----* SERVICES *----- */
+.services-title {
+  margin-top: 70px;
+}
+
+.no-padding {
+  padding-right: 0;
+}
+
+.line {
+  border-right: 1px solid #ccc;
+  min-height: 100px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border-color: #fff !important;
+  color: #0090D5;
+}
+.nav-tabs > li.active > a h5, .nav-tabs > li.active > a:hover h5, .nav-tabs > li.active > a:focus h5 {
+  color: #0090D5;
+}
+
+.no-border a, h5 {
+  color: #333;
+  text-align: center;
+}
+
+.no-border a:hover {
+  background-color: transparent !important;
+  border-color: white !important;
+}
+
+.no-border {
+  border-color: white !important;
+  padding: 0;
+}
+
+.servicios-detail-row {
+  background-image: url("../img/large.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  height: 400px;
+}
+
+.description {
+  padding: 50px;
+  width: 100%;
+}
+.description p, .description h4 {
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.boton {
+  margin-top: 30px;
+}
+
+.servicios-items {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 75px;
+}
+
+/* -----* PROYECTOS DESTACADOS *----- */
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.destacados h1 {
+  margin: 75px 0;
+}
+
+/* -----* MODAL COTIZACIONES *----- */
+.modal-body p {
+  color: #666;
+}
+
+.modal-content h4 {
+  margin-bottom: 10px;
 }
